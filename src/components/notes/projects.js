@@ -14,7 +14,7 @@ export const projects = [
         "name": "www.ngdentalclinic.com",
         "link": "https://www.ngdentalclinic.com",
         "detail": "Created a static website for Ng Dental Surgery Klang with React, hosted on Netlify.",
-        "lesson": "This was when I actually first understood CSS. It was also my first time working with animations also so that was pretty nice.",
+        "lesson": "This was when I actually first understood CSS. It was also my first time working with animations so that was pretty nice.",
         "stack": "React",
         "date": "Feb '21 - Mar '21"
     },
