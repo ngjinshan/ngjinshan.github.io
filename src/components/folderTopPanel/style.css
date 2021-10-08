@@ -26,6 +26,9 @@
     left: 0%;
     position:relative;
 }
+.folder-top-panel .folder-red:hover {
+    background-color: #d3321d;
+}
 .folder-top-panel .folder-yellow {
     background-color: #febc2f;
     border-radius: 100%;
@@ -34,6 +37,9 @@
     margin: 0;
     left: 0.75%;
     position:relative;
+}
+.folder-top-panel .folder-yellow:hover {
+    background-color: #dfa529;
 }
 .folder-top-panel .folder-green {
     background-color: #27c840;
