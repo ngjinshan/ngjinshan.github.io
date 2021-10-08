@@ -68,7 +68,7 @@ export const twentyOne = [
                 "title": "NextJS",
                 "company": "",
                 "duration": "Mar '21 - Apr '21",
-                "detail": "Booking website with NextJS (practice)",
+                "detail": "Booking website with NextJS (practice frontend dev)",
                 "project": true
             }
         ]

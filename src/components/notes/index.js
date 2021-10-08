@@ -49,6 +49,9 @@ const Notes = () => {
                 <div className='note-detail'>
                     {activeProject.detail}
                 </div>
+                <div className='note-detail'>
+                    {activeProject.lesson}
+                </div>
                 {activeProject.stack &&
                 <div className='note-detail'>
                     <br/>
@@ -106,6 +109,9 @@ const Notes = () => {
                 <hr style={{marginTop: "8px"}}/>
                 <div className='note-detail'>
                     {activeProject.detail}
+                </div>
+                <div className='note-detail'>
+                    {activeProject.lesson}
                 </div>
                 {activeProject.stack &&
                 <div className='note-detail'>
