@@ -1,0 +1,75 @@
+.contact .folder-right-panel img {
+    border-radius: 50% !important;
+    border: 1px solid #616161;
+    width: 50%;
+}
+
+.contact-picture {
+    padding: 0 .55em;
+    border: 1px solid #616161;
+    border-radius: 50%;
+    font-size: xx-large;
+    background-color: #5f5f5f;
+}
+
+.contact-name {
+    color: #dedede;
+}
+
+.contact-detail {
+    font-size: small;
+    color: #7c7c7c;
+}
+
+.contact-value {
+    font-size: small;
+    color: #dedede;
+}
+
+.contact hr {
+    border-top: 1px solid #7c7c7c;
+    margin: 8px !important;
+}
+
+.contact a {
+    color: #dedede;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #0784ff;
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-detail {
+        font-size: medium;
+        color: #7c7c7c;
+    }
+    .contact-value {
+        font-size: medium;
+        color: #dedede;
+    }
+    .contact .folder-right-panel img {
+        width: 75%;
+    }
+}
+
+/*BIG TABLET VIEW*/
+@media only screen and (min-width: 1024px) {
+}
+
+/*DESKTOP VIEW*/
+@media only screen and (min-width: 1025px) {
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 767px) {
+    .contact .folder-right-panel img {
+        width: 100%;
+    }
+}
+
+/*SUPER SMALL VIEW*/
+@media only screen and (max-width: 330px) {
+}

@@ -1,0 +1,114 @@
+.barchart {
+    width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.barchart-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.barchart-label {
+    width: 30%;
+    text-align: right;
+    padding-right: 1em;
+    font-size: small;
+}
+
+.barchart-value-container {
+    width: 60%;
+    text-align: right;
+    color: transparent;
+}
+
+.barchart-value {
+    background-color: #27c840;
+}
+
+.barchart-value-number {
+    width: 10%;
+    color: white;
+    font-size: small;
+}
+
+.barchart-value-10 {
+    animation: bar-value-10 3s forwards;
+}
+.barchart-value-20 {
+    animation: bar-value-20 3s forwards;
+}
+.barchart-value-30 {
+    animation: bar-value-30 3s forwards;
+}
+.barchart-value-40 {
+    animation: bar-value-40 3s forwards;
+}
+.barchart-value-50 {
+    animation: bar-value-50 3s forwards;
+}
+.barchart-value-60 {
+    animation: bar-value-60 3s forwards;
+}
+.barchart-value-70 {
+    animation: bar-value-70 3s forwards;
+}
+.barchart-value-80 {
+    animation: bar-value-80 3s forwards;
+}
+.barchart-value-90 {
+    animation: bar-value-90 3s forwards;
+}
+.barchart-value-100 {
+    animation: bar-value-100 3s forwards;
+}
+
+
+@keyframes bar-value-10 {
+    0% { width: 0; }
+    100% { width: 10%; }
+}
+@keyframes bar-value-20 {
+    0% { width: 0; }
+    100% { width: 20%; }
+}
+@keyframes bar-value-30 {
+    0% { width: 0; }
+    100% { width: 30%; }
+}
+@keyframes bar-value-40 {
+    0% { width: 0; }
+    100% { width: 40%; }
+}
+@keyframes bar-value-50 {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+@keyframes bar-value-60 {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+@keyframes bar-value-70 {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+@keyframes bar-value-80 {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+@keyframes bar-value-90 {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+@keyframes bar-value-100 {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .barchart-label, .barchart-value-number {
+        font-size: large;
+    }
+}

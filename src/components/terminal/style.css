@@ -1,0 +1,251 @@
+.terminal-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;  
+    display: flex;
+    text-align: center;
+    color: #FFF;
+    background-color: rgba(0,0,0,0.5);
+    /* z-index: 1; */
+}
+
+.terminal-container {
+    margin: auto;
+    /* z-index: 2; */
+    width: 100%;
+    margin-top: 15vh;
+}
+
+.bar {
+    text-align: center;
+    width: 750px;
+    height: 25px;
+    background-color: #DAD9D9;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    float: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -48%;
+    bottom: -20%;
+    position:relative;
+}
+.yellow {
+    background-color: #febc2f;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -45%;
+    bottom: 40%;
+    position:relative;
+    display: block;
+}
+.green {
+    background-color: #27c840;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -42%;
+    bottom: 99%;
+    position:relative;
+    display: block;
+}
+.screen {
+    background-color: black;
+    width: 750px;
+    height: 450px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    margin: 0 auto;
+    padding: 1px 2.5px 1px 2.5px;
+    float: none;
+    overflow: auto;
+}
+.font {
+    color: #27c840;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+    position: static;
+}
+
+/**
+font: #fcfcfc;
+screen: #1e1e1e
+bar: #393939;
+font: #1AAF5C;
+screen: black;
+bar: #DAD9D9;
+*/
+
+.line-1{
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter-1{
+  animation: typewriter-1 3s steps(100) 1s 1 forwards;
+}
+
+.cursor-1 {
+    animation: blink 1s 3s 2 forwards;
+    font-weight: 700;
+    border-right: 7px solid #27c840;
+}
+
+@keyframes typewriter-1{
+  from{width: 0;}
+  to{width: 36em;}
+}
+
+.line-2{
+    width: 0em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter-2{
+  animation: typewriter-2 1s steps(44) 5s 1 forwards;
+}
+
+.cursor-2 {
+    animation: blink 1s 5.5s infinite forwards;
+    font-weight: 700;
+    border-right: 7px solid #27c840;
+}
+
+@keyframes typewriter-2{
+  from{width: 0em;}
+  to{width: 8em;}
+}
+
+.line-3{
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter-3{
+  animation: typewriter-3 3s steps(44) 14s 1 forwards;
+}
+
+.cursor-3 {
+    animation: blink 1s 17s infinite forwards;
+}
+
+@keyframes typewriter-3{
+  from{width: 0;}
+  to{width: 35em;}
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .font {
+        font-size: x-large;
+    }
+    .bar {
+        width: 90vw;
+    }
+    .screen {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    @keyframes typewriter-1{
+        from{width: 0;}
+        to{width: 32em;}
+    }
+    @keyframes typewriter-2{
+        from{width: 0;}
+        to{width: 8em;}
+    }
+}
+
+/*DESKTOP VIEW*/
+@media only screen and (min-width: 1025px) {
+    .font {
+        font-size: 15px;
+    }
+    .terminal-container {
+        margin-top: 12.5vh;
+    }
+    .bar {
+        width: 750px;
+    }
+    .screen {
+        width: 750px;
+        height: 52.5vh;
+    }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 767px) {
+    .bar {
+        width: 92.5vw;
+    }
+    .screen {
+        width: 92.5vw;
+        height: 50vh;
+    }
+    .red {
+        left: -46%;
+    }
+    .yellow {
+        left: -40%;
+    }
+    .green {
+        left: -34%;
+    }
+    .font {
+        font-size: x-small;
+    }
+
+    @keyframes typewriter-1{
+        from{width: 0;}
+        to{width: 32em;}
+    }
+    
+    @keyframes typewriter-2{
+        from{width: 0;}
+        to{width: 8em;}
+    }
+}
+
+/*SUPER SMALL VIEW*/
+@media only screen and (max-width: 330px) {
+    .bar {
+        width: 90vw;
+    }
+    .screen {
+        width: 90vw;
+        height: 50vh;
+    }
+}

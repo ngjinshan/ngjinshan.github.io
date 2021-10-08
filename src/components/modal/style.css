@@ -1,0 +1,292 @@
+.modal-content {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.modal-body {
+    padding: 0 !important;
+}
+
+.modal-body .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.folder-right-panel {
+    background-color: #272727;
+    color: #efefef;
+    border: 1px solid #272727;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.about .folder-right-panel img {
+    border-radius: 50% !important;
+    border: 1px solid #616161;
+    width: 75%;
+}
+
+.experience-modal .modal-content{
+    height: 75vh;
+}
+
+.experience-modal .modal-body {
+    overflow-y: auto;
+}
+
+/**
+turn off the slide up animation for some reason
+*/
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform .3s ease-out;
+    transform: translate(0, -50px) !important;
+}
+
+.spaceInDown1 {
+    animation: spaceInDown1 .33s linear 0s 1 forwards;
+}
+  
+@-webkit-keyframes spaceInDown1 {
+    0% {
+        opacity: 0;
+        transform-origin: 45% 80%;
+        transform: scale(0.2) translate(0%, 50%) skewX(160deg); 
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 80%;
+        transform: scale(1) translate(0%, 0%) skewX(180deg); 
+    } 
+}
+  
+@keyframes spaceInDown1 {
+    0% {
+        opacity: 0;
+        transform-origin: 45% 80%;
+        transform: scale(0.2) translate(0%, 50%) skewX(160deg); 
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 80%;
+        transform: scale(1) translate(0%, 0%) skewX(180deg); 
+    } 
+}
+
+.spaceInDown2 {
+    animation: spaceInDown2 .33s linear 0s 1 forwards;
+}
+
+@-webkit-keyframes spaceInDown2 {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 80%;
+        transform: scale(0.2) translate(0%, 50%) skewX(160deg); 
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 80%;
+        transform: scale(1) translate(0%, 0%) skewX(180deg); 
+    } 
+}
+
+@keyframes spaceInDown2 {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 80%;
+        transform: scale(0.2) translate(0%, 50%) skewX(160deg); 
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 80%;
+        transform: scale(1) translate(0%, 0%) skewX(180deg); 
+    } 
+}
+
+.spaceInDown3 {
+    animation: spaceInDown3 .33s linear 0s 1 forwards;
+}
+
+@-webkit-keyframes spaceInDown3 {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 80%;
+        transform: scale(0.2) translate(0%, 50%) skewX(200deg); 
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 80%;
+        transform: scale(1) translate(0%, 0%) skewX(180deg); 
+    } 
+}
+
+@keyframes spaceInDown3 {
+    0% {
+        opacity: 0;
+        transform-origin: 50% 80%;
+        transform: scale(0.2) translate(0%, 50%) skewX(200deg); 
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 80%;
+        transform: scale(1) translate(0%, 0%) skewX(180deg); 
+    } 
+}
+
+.spaceInDown4 {
+    animation: spaceInDown4 .33s linear 0s 1 forwards;
+}
+  
+@-webkit-keyframes spaceInDown4 {
+    0% {
+        opacity: 0;
+        transform-origin: 55% 80%;
+        transform: scale(0.2) translate(0%, 50%) skewX(200deg); 
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 80%;
+        transform: scale(1) translate(0%, 0%) skewX(180deg); 
+    } 
+}
+  
+@keyframes spaceInDown4 {
+    0% {
+        opacity: 0;
+        transform-origin: 55% 80%;
+        transform: scale(0.2) translate(0%, 50%) skewX(200deg); 
+    }
+    100% {
+        opacity: 1;
+        transform-origin: 50% 80%;
+        transform: scale(1) translate(0%, 0%) skewX(180deg); 
+    } 
+}
+
+.spaceOutDown1 {
+    -webkit-animation-name: spaceOutDown1;
+    animation-name: spaceOutDown1; 
+    animation: spaceOutDown1 0.5s linear 0s 1 forwards;
+}
+
+@-webkit-keyframes spaceOutDown1 {
+    0% {
+        opacity: 1;
+        transform-origin: 50% 75%;
+        transform: scale(1) translate(0%, 0%); 
+    }
+    100% {
+        opacity: 0;
+        transform-origin: 50% 75%;
+        transform: scale(0.2) translate(0%, 50%); 
+    } 
+}
+
+@keyframes spaceOutDown1 {
+    0% {
+        opacity: 1;
+        transform-origin: 50% 75%;
+        transform: scale(1) translate(0%, 0%); 
+    }
+    100% {
+        opacity: 0;
+        transform-origin: 50% 75%;
+        transform: scale(0.2) translate(0%, 50%); 
+    } 
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .modal-content{
+        max-height: 80vh;
+        font-size: large;
+    }
+
+    .modal-body {
+        overflow-y: auto;
+    }
+    .modal-65w, .modal-70w, .modal-75w, .modal-80w, .modal-85w, .modal-90w, .modal-95w {
+        max-width: 85vw !important;
+        margin-left: auto !important; 
+        margin-right: auto !important;
+    }
+    .folder-right-panel {
+        border-radius: 8px !important;
+    }
+    .experience .folder-right-panel {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+    }
+}
+
+/*BIG TABLET VIEW*/
+@media only screen and (min-width: 1024px) {
+    .folder-right-panel {
+        border-top-left-radius: 0 !important;
+        /* border-bottom-left-radius: 0 !important; */
+    }
+}
+
+/*DESKTOP VIEW*/
+@media only screen and (min-width: 1025px) {
+    .modal-65w {
+        max-width: 65vw !important;
+    }
+    .modal-70w {
+        max-width: 70vw !important;
+    }
+    .modal-75w {
+        max-width: 75vw !important;
+    }
+    .modal-80w {
+        max-width: 80vw !important;
+    }
+    .modal-85w {
+        max-width: 85vw !important;
+    }
+    .modal-90w {
+        max-width: 90vw !important;
+    }
+    .modal-95w {
+        max-width: 95vw !important;
+    }
+
+    .experience .folder-right-panel {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 767px) {
+    .modal-content{
+        max-height: 70vh;
+    }
+    .modal-body {
+        overflow-y: auto;
+    }
+    .modal-65w, .modal-70w, .modal-75w, .modal-80w, .modal-85w, .modal-90w, .modal-95w {
+        max-width: 85vw !important;
+        margin-left: auto !important; 
+        margin-right: auto !important;
+    }
+    .folder-right-panel {
+        border-radius: 8px !important;
+    }
+}
+
+/*SUPER SMALL VIEW*/
+@media only screen and (max-width: 330px) {
+    .modal-content{
+        max-height: 70vh;
+    }
+    .modal-body {
+        overflow-y: auto;
+    }
+}

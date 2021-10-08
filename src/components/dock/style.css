@@ -1,0 +1,123 @@
+.main-contain {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
+.main-contain .dock {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+}
+.main-contain .mirror-container {
+    position: fixed;
+    left: 0;
+    bottom: .5em;
+    width: 100%;
+    /* height:px; */
+    display: block;
+    opacity: 0.2;
+}
+.main-contain .dock-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    padding: 20px;
+    position: relative;
+}
+.main-contain .dock-nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.main-contain .dock-nav ul li img {
+    width: 50px;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),-webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-box-reflect: below .05em -webkit-gradient(linear, right top, right
+                        bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+}
+.main-contain .dock-nav ul li:hover img{
+    transform: translateY(-15px) scale(1.2);
+}
+.main-contain .dock-nav ul li.other img {
+    transform: translateY(-5px);
+}
+
+.folder-title {
+    color: white;
+    font-size: small;
+    font-family: monospace;
+    /* margin-top: -.5em;
+    margin-bottom: 1.25em; */
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),-webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+li:hover figcaption{
+    transform: translateY(-10px);
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .folder-title {
+        font-size: larger;
+    }
+}
+
+/*BIG TABLET VIEW*/
+@media only screen and (min-width: 1024px) {
+}
+
+/*DESKTOP VIEW*/
+@media only screen and (min-width: 1025px) {
+    .folder-title {
+        font-size: small;
+    }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 767px) {
+    .main-contain .dock {
+        width: 100%;
+    }
+    .mirror {
+        width: 100%;
+        position: fixed;
+        bottom: .5em;
+        left: 0;
+        height: 75px;
+    }
+    .main-contain .dock-nav {
+        width: 100%;
+    }
+    .main-contain .dock-nav ul {
+        overflow: auto;
+        padding: 20px 0 20px 0;
+        /* padding-inline-start: 5em; */
+    }
+    .main-contain .dock-nav ul li {
+        padding: 0 .5em;
+    }
+}
+
+/*SUPER SMALL VIEW*/
+@media only screen and (max-width: 330px) {
+    .main-contain .dock-nav ul li {
+        padding: 0 .25em;
+    }
+    .folder-title {
+        font-size: xx-small;
+    }
+}

@@ -1,0 +1,81 @@
+.folder-top-panel {
+    background-color: #484848;
+    padding: 10px;
+    /* border: 1px solid #484848; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: sticky;
+    top: 0;
+}
+
+.folder-top-panel .folder-bar {
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    font-family: monospace;
+    float: none;
+    display: flex;
+    margin-bottom: 0;
+}
+.folder-top-panel .folder-red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    left: 0%;
+    position:relative;
+}
+.folder-top-panel .folder-yellow {
+    background-color: #febc2f;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    left: 0.75%;
+    position:relative;
+}
+.folder-top-panel .folder-green {
+    background-color: #27c840;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    left: 1.5%;
+    position:relative;
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .folder-top-panel {
+        display: initial;
+    }
+}
+
+/*BIG TABLET VIEW*/
+@media only screen and (min-width: 1024px) {
+    .folder-top-panel {
+        display: initial;
+    }
+}
+
+/*DESKTOP VIEW*/
+@media only screen and (min-width: 1025px) {
+    .folder-top-panel {
+        display: initial;
+    }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 767px) {
+    .folder-top-panel {
+        display: none;
+    }
+}
+
+/*SUPER SMALL VIEW*/
+@media only screen and (max-width: 330px) {
+    .folder-top-panel {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+.folder-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;  
+    display: none;
+    text-align: center;
+    color: #FFF;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.folder-overlay-show {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;  
+    display: flex;
+    visibility: hidden;
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+    text-align: center;
+    color: #FFF;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.folder-container {
+    margin: auto;
+    z-index: 110;
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    color: black;
+}

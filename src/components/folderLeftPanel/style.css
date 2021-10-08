@@ -1,0 +1,121 @@
+.folder-left-panel {
+    background-color: #484848;
+    padding: 10px;
+    border: 1px solid #484848;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.folder-bar {
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    font-family: monospace;
+    float: none;
+    display: flex;
+    margin-bottom: 1em;
+}
+.folder-red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    left: 0%;
+    position:relative;
+}
+.folder-yellow {
+    background-color: #febc2f;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    left: 5%;
+    position:relative;
+}
+.folder-green {
+    background-color: #27c840;
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    left: 10%;
+    position:relative;
+}
+
+.folder-files {
+    margin-bottom: 12px;
+}
+
+.folder-files-group {
+    font-size: 13px;
+    color: #888888;
+    margin-bottom: 6px;
+}
+
+.folder-file {
+    color: #efefef;
+    /* margin-bottom: 6px; */
+    padding-left: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    /* width: 80%; */
+}
+
+.folder-file.active {
+    background-color: #616161;
+    border: 1px solid #616161;
+    margin-left: -2px;
+    border-radius: 8px;
+}
+
+.folder-file.note-active {
+    background-color: #c7aa49;
+    border: 1px solid #c7aa49;
+    margin-left: -2px;
+    border-radius: 8px;
+}
+
+/*TABLET VIEW*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .folder-left-panel {
+        display: none;
+    }
+    .folder-files-group {
+        font-size: 15px;
+    }
+    .folder-file {
+        font-size: 15px;
+    }
+}
+
+/*BIG TABLET VIEW*/
+@media only screen and (min-width: 1024px) {
+    .folder-left-panel {
+        display: initial;
+    }
+}
+
+/*DESKTOP VIEW*/
+@media only screen and (min-width: 1025px) {
+    .folder-left-panel {
+        display: initial;
+    }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 767px) {
+    .folder-left-panel {
+        display: none;
+    }
+}
+
+/*SUPER SMALL VIEW*/
+@media only screen and (max-width: 330px) {
+    .folder-left-panel {
+        display: none;
+    }
+}
