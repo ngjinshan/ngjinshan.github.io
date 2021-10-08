@@ -146,7 +146,7 @@ export const twentyOne = [
                 "title": "ngjinshan.github.io",
                 "company": "",
                 "duration": "Oct '21",
-                "detail": "",
+                "detail": "Portfolio site - details in Projects folder",
                 "project": true
             }
         ]

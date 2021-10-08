@@ -1,5 +1,13 @@
 export const projects = [
     {
+        "name": "ngjinshan.github.io",
+        "link": "",
+        "detail": `Inspired by macOS/iOS theme or something like that.`,
+        "lesson": "",
+        "stack": "React",
+        "date": "Oct '21"
+    },
+    {
         "name": "Ah Her Food Order Management System",
         "link": "",
         "detail": `Designed and created an order management system for Ah Her Food Industries. They were previously using excel sheets so I 
