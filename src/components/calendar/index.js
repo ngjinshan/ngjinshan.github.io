@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { experience, calendarRemainingDays, twentyMobile, twentyOneMobile, eighteenMobile, twentyOne, twenty, eighteen } from './experience';
+import { twentyMobile, twentyOneMobile, twentyOne, twenty } from './experience';
 
 import './style.css';
 
 const Calendar = () => {
 
     const [duration, setDuration] = useState('');
-    const [title, setTitle] = useState('');
+    // const [title, setTitle] = useState('');
     const [company, setCompany] = useState('');
     const [detail, setDetail] = useState('');
     const [month, setMonth] = useState('');
@@ -94,7 +94,7 @@ const Calendar = () => {
         )
     }
 
-    const renderMobileMonths = (data, index) => {
+    const renderMobileMonths = (data) => {
         return(
             <div>
                 <div style={{fontSize: 'small'}}>

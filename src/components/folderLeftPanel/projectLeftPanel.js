@@ -17,7 +17,7 @@ const ProjectLeftPanel = (props) => {
                 <div className="folder-files-group">
                     iCloud
                     <div className="folder-file active">
-                        Notes
+                        Projects
                     </div>
                 </div>
             </div>

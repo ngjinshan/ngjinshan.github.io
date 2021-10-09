@@ -1,3 +1,5 @@
+import React from 'react';
+
 import './style.css';
 
 const Contact = () => {
@@ -63,7 +65,7 @@ const Contact = () => {
                 <div className="col-10">
                     <div className="contact-value">
                         <div className="contact-value">
-                            <a href="https://linkedin.com/in/jin-shan-ng-b245841b2" target="_blank">https://linkedin.com/in/jin-shan-ng-b245841b2</a>
+                            <a href="https://linkedin.com/in/jin-shan-ng-b245841b2" target="_blank" rel="noreferrer">https://linkedin.com/in/jin-shan-ng-b245841b2</a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +82,7 @@ const Contact = () => {
                 <div className="col-10">
                     <div className="contact-value">
                         <div className="contact-value">
-                            <a href="https://www.facebook.com/ng.j.shan/" target="_blank">https://www.facebook.com/ng.j.shan/</a>
+                            <a href="https://www.facebook.com/ng.j.shan/" target="_blank" rel="noreferrer">https://www.facebook.com/ng.j.shan/</a>
                         </div>
                     </div>
                 </div>

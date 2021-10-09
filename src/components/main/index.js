@@ -1,7 +1,7 @@
 import React from 'react';
 import Terminal from '../terminal';
 import Dock from '../dock';
-import Folder from '../folder'
+// import Folder from '../folder'
 
 import './style.css';
 

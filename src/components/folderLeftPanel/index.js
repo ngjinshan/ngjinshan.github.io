@@ -13,7 +13,7 @@ const FolderLeftPanel = (props) => {
                 <div className="folder-green">
                 </div>
             </div>
-            <div className="folder-files">
+            {/* <div className="folder-files">
                 <div className="folder-files-group">
                     Favourites
                     <div className="folder-file">
@@ -36,23 +36,23 @@ const FolderLeftPanel = (props) => {
                     </div>
                 </div>
                 
-            </div>
+            </div> */}
             <div className="folder-files">
                 <div className="folder-files-group">
                     iCloud
-                    <div className="folder-file">
-                        iCloud Drive
+                    <div className="folder-file active">
+                        About
                     </div>
                 </div>
             </div>
-            <div className="folder-files">
+            {/* <div className="folder-files">
                 <div className="folder-files-group">
                     Location
                     <div className="folder-file">
                         Network
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Modal, ModalBody } from 'react-bootstrap';
 import ContactLeftPanel from '../folderLeftPanel/contactLeftPanel';
 import Contact from '../contact'

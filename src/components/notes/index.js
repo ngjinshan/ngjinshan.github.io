@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import LeftTopPanel from './leftTopPanel'
 import RightTopPanel from './rightTopPanel'
 import { projects } from './projects';
@@ -40,7 +40,7 @@ const Notes = () => {
 
                     {activeProject.link &&
                     <span className="note-link">
-                        <a href={activeProject.link} target="_blank">
+                        <a href={activeProject.link} target="_blank" rel="noreferrer">
                             &nbsp;&nbsp; <FontAwesomeIcon icon={faExternalLinkAlt}></FontAwesomeIcon>
                         </a>
                     </span>
@@ -100,7 +100,7 @@ const Notes = () => {
 
                     {activeProject.link &&
                     <span className="note-link">
-                        <a href={activeProject.link} target="_blank">
+                        <a href={activeProject.link} target="_blank" rel="noreferrer">
                             &nbsp;&nbsp; <FontAwesomeIcon icon={faExternalLinkAlt}></FontAwesomeIcon>
                         </a>
                     </span>
