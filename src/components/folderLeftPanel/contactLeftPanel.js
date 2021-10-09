@@ -21,19 +21,19 @@ const ContactLeftPanel = (props) => {
             <div className="folder-files">
                 <div className="folder-files-group">
                     iCloud
-                    <div className="folder-file active">
-                        Contact
+                    <div className={`folder-file ${props.active === 'All iCloud' ? 'active' : ''}`} onClick={() => props.setActive('All iCloud')}>
+                        All iCloud
                     </div>
                 </div>
             </div>
-            {/* <div className="folder-files">
+            <div className="folder-files">
                 <div className="folder-files-group">
                     On My Mac
-                    <div className="folder-file">
+                    <div className={`folder-file ${props.active === 'All On My Mac' ? 'active' : ''}`} onClick={() => props.setActive('All On My Mac')}>
                         All On My Mac
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

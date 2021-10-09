@@ -8,7 +8,7 @@ import './style.css'
 
 const AboutModal = (props) => {
 
-    const [active, setActive] = useState('About')
+    const [active, setActive] = useState('Documents')
 
     return(
         <Modal

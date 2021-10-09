@@ -41,7 +41,7 @@ const FolderLeftPanel = (props) => {
                 <div className="folder-files-group">
                     iCloud
                     <div className={`folder-file ${props.active === 'About' ? 'active' : ''}`} onClick={() => props.setActive('About')}>
-                        About
+                        iCloud Drive
                     </div>
                 </div>
             </div>
