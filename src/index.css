@@ -32,7 +32,7 @@ code {
   background: #555; 
 }
 
-.noselect, br {
+.noselect, br, .folder-file {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */

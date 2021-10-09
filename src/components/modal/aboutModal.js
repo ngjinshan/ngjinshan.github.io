@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Modal, ModalBody } from 'react-bootstrap';
 import Barchart from '../barchart';
 import FolderLeftPanel from '../folderLeftPanel';
@@ -7,6 +7,8 @@ import img from 'src/images/about.jpg';
 import './style.css'
 
 const AboutModal = (props) => {
+
+    const [active, setActive] = useState('About')
 
     return(
         <Modal
@@ -18,7 +20,7 @@ const AboutModal = (props) => {
         >
             <ModalBody>
                 <div className="row folder about">
-                    <FolderLeftPanel onHide={props.onHide}/>
+                    <FolderLeftPanel setActive={setActive} active={active} onHide={props.onHide}/>
                     <div className="col-lg-10 folder-right-panel">
                         <div className="container" style={{width: "100%", height: "100%"}}>
                             <div className="row" style={{width: "100%", height: "100%"}}>
