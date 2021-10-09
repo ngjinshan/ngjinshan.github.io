@@ -50,28 +50,4 @@ export const projects = [
         "stack": "Unity",
         "date": "Jan '20 - Mar '20"
     },
-    {
-        "name": "Attendance",
-        "link": "",
-        "detail": "Developed an attendance capturing application for Monash's School of Medicine for my year long project. This attendance application uses geofencing and geolocation when recording student's attendance to prevent students from faking their attendance.",
-        "lesson": "",
-        "stack": "Express, MongoDB, Heroku, Flutter",
-        "date": "Mar '20 - Nov '20"
-    },
-    {
-        "name": "RMA Program",
-        "link": "",
-        "detail": "Created an internal desktop application for General OA Sdn Bhd to track their sales and services.",
-        "lesson": "There weren't any APIs for this project it was just querying the database directly",
-        "stack": "C#, MongoDB, Winforms",
-        "date": "Jul '20"
-    },
-    {
-        "name": "TryAngle",
-        "link": "https://play.google.com/store/apps/details?id=com.Butter_Soft.TryAngle_Test",
-        "detail": "My first ever project. Created a hyper-casual game with Unity where you rotate the triangle to match the orientation of the triangle holes on the incoming walls. This game sadly is probably no longer on the App store.",
-        "lesson": "This was my first time working with C# and Unity.",
-        "stack": "Unity",
-        "date": "Jan '20 - Mar '20"
-    },
 ]

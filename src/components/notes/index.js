@@ -9,7 +9,7 @@ import './style.css';
 
 const Notes = () => {
 
-    const [active, setActive] = useState('Ah Her Food Order Management System');
+    const [active, setActive] = useState('ngjinshan.github.io');
     const [mobileActive, setMobileActive] = useState()
 
     const renderNoteSimplified = (data, index) => {
