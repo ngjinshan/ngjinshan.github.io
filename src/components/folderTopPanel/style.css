@@ -27,7 +27,7 @@
     position:relative;
 }
 .folder-top-panel .folder-red:hover {
-    background-color: #d3321d;
+    background-color: red;
 }
 .folder-top-panel .folder-yellow {
     background-color: #febc2f;
@@ -39,7 +39,7 @@
     position:relative;
 }
 .folder-top-panel .folder-yellow:hover {
-    background-color: #dfa529;
+    background-color: #ff8c00;
 }
 .folder-top-panel .folder-green {
     background-color: #27c840;

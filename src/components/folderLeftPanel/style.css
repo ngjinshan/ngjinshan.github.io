@@ -25,7 +25,7 @@
     position:relative;
 }
 .folder-red:hover {
-    background-color: #d3321d;
+    background-color: red;
 }
 .folder-yellow {
     background-color: #febc2f;
@@ -37,7 +37,7 @@
     position:relative;
 }
 .folder-yellow:hover {
-    background-color: #dfa529;
+    background-color: #ff8c00;
 }
 .folder-green {
     background-color: #27c840;
