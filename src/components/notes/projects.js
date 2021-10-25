@@ -31,7 +31,7 @@ export const projects = [
         "link": "",
         "detail": "Developed an attendance capturing application for Monash's School of Medicine for my year long project. This attendance application uses geofencing and geolocation when recording student's attendance to prevent students from faking their attendance.",
         "lesson": "",
-        "stack": "Express, MongoDB, Heroku, Flutter",
+        "stack": "Flutter, Express, MongoDB, Heroku",
         "date": "Mar '20 - Nov '20"
     },
     {
