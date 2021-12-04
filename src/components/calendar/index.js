@@ -33,10 +33,21 @@ const Calendar = () => {
                 setDetail(data.detail)
             }
 
+            let color = "black";
+            let backgroundColor = "#c7aa49";
+            console.log(data.type)
+            if(data.type === "work"){
+                color = "#efefef";
+                backgroundColor = "#1e4962";
+            }else if(data.type === "comp"){
+                color = "#efefef";
+                backgroundColor = "green";
+            }
+
             return(
                 <>
                 <div onClick={(e) => {e.stopPropagation(); setBox(); setMonth(m); setYear(y);}} className="title-company noselect" 
-                style={{cursor: "pointer", textAlign: "left", color: `${data.project ? 'black' : '#efefef'}`, backgroundColor: `${data.project ? '#c7aa49' : "#1e4962"}`, marginBottom: "6px", borderRadius: "6px", padding: "1px 6px", width: "fit-content"}}>
+                style={{cursor: "pointer", textAlign: "left", color: color, backgroundColor: backgroundColor, marginBottom: "6px", borderRadius: "6px", padding: "1px 6px", width: "fit-content"}}>
                     {data.title}
                 </div>
                 </>

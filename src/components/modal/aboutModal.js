@@ -31,7 +31,7 @@ const AboutModal = (props) => {
                                     <br/>
                                     <div className="text-center">
                                         <p>
-                                            3rd year Software Engineering student and aspiring programmer. Currently <b>slightly</b> more interested in frontend dev.
+                                            3rd year Software Engineering student and aspiring programmer.
                                         </p>
                                     </div>
                                 </div>

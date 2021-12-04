@@ -1,3 +1,7 @@
+const WORK = "work";
+const PROJECT = "project";
+const COMP = "comp"
+
 export const twentyOne = [
     {
         "month": "Jan",
@@ -13,7 +17,7 @@ export const twentyOne = [
                 "company": "",
                 "duration": "Feb '21 - Mar '21",
                 "detail": "Static website - details in Projects folder",
-                "project": true
+                "type": PROJECT
             }
         ]
     },
@@ -26,7 +30,7 @@ export const twentyOne = [
                 "company": "",
                 "duration": "Mar '21 - Apr '21",
                 "detail": "Booking website with NextJS (practice frontend dev)",
-                "project": true
+                "type": PROJECT
             }
         ]
     },
@@ -38,7 +42,8 @@ export const twentyOne = [
                 "title": "Research Assistant",
                 "company": "Monash Malaysia",
                 "duration": "Apr '21 - Oct '21",
-                "detail": "XAI in breast cancer diagnosis | PyTorch, Lime, Flask, React"
+                "detail": "XAI in breast cancer diagnosis | PyTorch, Lime, Flask, React",
+                "type": WORK
             }
         ]
     },
@@ -55,13 +60,15 @@ export const twentyOne = [
                 "title": "Web Dev Intern",
                 "company": "Dassault Systemes",
                 "duration": "Jun '21 - Nov '21",
-                "detail": "Full-stack dev | PHP, Javascript, HTML5, CSS, UWA, MySQL"
+                "detail": "Full-stack dev | PHP, Javascript, HTML5, CSS, UWA, MySQL",
+                "type": WORK
             },
             {
                 "title": "Monash Coding League",
                 "company": "Monash Malaysia",
                 "duration": "Jun '21",
-                "detail": "9th place for a coding competition held by Monash School of IT"
+                "detail": "9th place for a coding competition held by Monash School of IT",
+                "type": COMP
             },
         ]
     },
@@ -74,7 +81,7 @@ export const twentyOne = [
                 "company": "",
                 "duration": "Jul '21 - Oct '21",
                 "detail": "Order management site - details in Projects folder",
-                "project": true
+                "type": PROJECT
             }
         ]
     },
@@ -86,7 +93,8 @@ export const twentyOne = [
                 "title": "Quickhack 2021",
                 "company": "Monash Malaysia",
                 "duration": "Aug '21",
-                "detail": "5th place for a hackathon hosted by Monash University Malaysia Tech Club"
+                "detail": "5th place for a hackathon hosted by Monash University Malaysia Tech Club",
+                "type": COMP
             }
         ]
     },
@@ -104,7 +112,7 @@ export const twentyOne = [
                 "company": "",
                 "duration": "Oct '21",
                 "detail": "Portfolio site - details in Projects folder",
-                "project": true
+                "type": PROJECT
             }
         ]
     },
@@ -116,7 +124,8 @@ export const twentyOne = [
                 "title": "Business Analyst Intern",
                 "company": "Fusionex",
                 "duration": "Nov '21 - Feb '22",
-                "detail": ""
+                "detail": "Full-stack dev | ASP.NET Core, Vue.js, MongoDB",
+                "type": WORK
             }
         ]
     },
@@ -132,7 +141,7 @@ export const twentyOneMobile = [
         "title": "Business Analyst Intern",
         "company": "Fusionex",
         "duration": "Nov '21 - Feb '22",
-        "detail": ""
+        "detail": "Full-stack dev | ASP.NET Core, Vue.js, MongoDB"
     },
     {
         "title": "Quickhack 2021",
@@ -170,7 +179,7 @@ export const twenty = [
                 "company": "",
                 "duration": "Jan '20 - Mar '20",
                 "detail": "Hypercasual game - details in Projects folder",
-                "project": true
+                "type": PROJECT
             }
         ]
     },
@@ -188,7 +197,7 @@ export const twenty = [
                 "company": "Monash Malaysia",
                 "duration": "Mar '20 - Nov '20",
                 "detail": "Year long project - details in Projects folder",
-                "project": true
+                "type": PROJECT
             }
         ]
     },
@@ -216,7 +225,7 @@ export const twenty = [
                 "company": "",
                 "duration": "Jul '20",
                 "detail": "Sales management app - details in Projects folder",
-                "project": true
+                "type": PROJECT
             }
         ]
     },
@@ -248,7 +257,8 @@ export const twenty = [
                 "title": "Software Engineer Intern",
                 "company": "Curlec",
                 "duration": "Dec '20 - Feb '21",
-                "detail": "Full-stack dev | React, Express, MongoDB, AWS\nFull-stack dev | React, Django, PostgreSQL"
+                "detail": "Full-stack dev | React, Express, MongoDB, AWS\nFull-stack dev | React, Django, PostgreSQL",
+                "type": WORK
             }
         ]
     }

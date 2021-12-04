@@ -88,6 +88,23 @@ const Contact = () => {
                 </div>
             </div>
             <hr/>
+            <div className="row">
+                <div className="col-2">
+                    <div className="d-flex justify-content-end">
+                        <div className="contact-detail">
+                            resume
+                        </div>
+                    </div>
+                </div>
+                <div className="col-10">
+                    <div className="contact-value">
+                        <div className="contact-value">
+                            <a href="/NG_JIN_SHAN_RESUME.pdf" download target="_blank" rel="noreferrer">NG_JIN_SHAN_RESUME.pdf</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
             <br/>
             <br/>
         </div>
