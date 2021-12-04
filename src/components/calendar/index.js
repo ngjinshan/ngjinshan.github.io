@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { twentyMobile, twentyOneMobile, twentyOne, twenty } from './experience';
+import { twentyMobile, twentyOneMobile, twentyOne, twenty, WORK, PROJECT, COMP } from './experience';
 
 import './style.css';
 
@@ -35,11 +35,11 @@ const Calendar = () => {
 
             let color = "black";
             let backgroundColor = "#c7aa49";
-            console.log(data.type)
-            if(data.type === "work"){
+
+            if(data.type === WORK){
                 color = "#efefef";
                 backgroundColor = "#1e4962";
-            }else if(data.type === "comp"){
+            }else if(data.type === COMP){
                 color = "#efefef";
                 backgroundColor = "green";
             }

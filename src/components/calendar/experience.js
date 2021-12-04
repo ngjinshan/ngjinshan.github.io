@@ -1,6 +1,6 @@
-const WORK = "work";
-const PROJECT = "project";
-const COMP = "comp"
+export const WORK = "work";
+export const PROJECT = "project";
+export const COMP = "comp"
 
 export const twentyOne = [
     {
