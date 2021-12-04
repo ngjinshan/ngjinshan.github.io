@@ -123,7 +123,7 @@ export const twentyOne = [
             {
                 "title": "Business Analyst Intern",
                 "company": "Fusionex",
-                "duration": "Nov '21 - Feb '22",
+                "duration": "Nov '21 - Jan '22",
                 "detail": "Full-stack dev | ASP.NET Core, Vue.js, MongoDB",
                 "type": WORK
             }
@@ -140,7 +140,7 @@ export const twentyOneMobile = [
     {
         "title": "Business Analyst Intern",
         "company": "Fusionex",
-        "duration": "Nov '21 - Feb '22",
+        "duration": "Nov '21 - Jan '22",
         "detail": "Full-stack dev | ASP.NET Core, Vue.js, MongoDB"
     },
     {
