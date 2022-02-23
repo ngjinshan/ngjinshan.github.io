@@ -15,7 +15,7 @@ export const projects = [
         "lesson": `Working on this project, I explored more backend programming. I learned how to properly (I think) validate API requests
         using Axios interceptors and use refresh tokens with access tokens where users can be disconnected in real time if needed. Also,
         the project was rather large and I learned how to manage and design a database structure with many tables.`,
-        "stack": "React, MongoDB, Express, Heroku",
+        "stack": "React, MongoDB, Express",
         "date": "Jul '21 - Oct '21"
     },
     {
@@ -31,7 +31,7 @@ export const projects = [
         "link": "",
         "detail": "Developed an attendance capturing application for Monash's School of Medicine for my year long project. This attendance application uses geofencing and geolocation when recording student's attendance to prevent students from faking their attendance.",
         "lesson": "",
-        "stack": "Flutter, Express, MongoDB, Heroku",
+        "stack": "Flutter, Express, MongoDB",
         "date": "Mar '20 - Nov '20"
     },
     {
