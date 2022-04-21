@@ -2,7 +2,7 @@ export const projects = [
     {
         "name": "shindo.me",
         "link": "https://shindo.me",
-        "detail": `Designed and developed a website for an NFT project.`,
+        "detail": `Designed and developed a static site for an NFT project. (not affiliated)`,
         "lesson": "",
         "stack": "React, Firebase",
         "date": "Mar '22 - Apr '22"
