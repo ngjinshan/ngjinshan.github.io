@@ -1,5 +1,13 @@
 export const projects = [
     {
+        "name": "shindo.me",
+        "link": "https://shindo.me",
+        "detail": `Designed and developed a website for an NFT project.`,
+        "lesson": "",
+        "stack": "React, Firebase",
+        "date": "Mar '22 - Apr '22"
+    },
+    {
         "name": "ngjinshan.github.io",
         "link": "",
         "detail": `Inspired by macOS/iOS theme or something like that.`,

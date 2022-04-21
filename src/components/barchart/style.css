@@ -18,7 +18,7 @@
 }
 
 .barchart-value-container {
-    width: 60%;
+    width: 100%;
     text-align: right;
     color: transparent;
 }
@@ -110,5 +110,12 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .barchart-label, .barchart-value-number {
         font-size: large;
+    }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 767px) {
+    .barchart-value-container {
+        width: 55%;
     }
 }

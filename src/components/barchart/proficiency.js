@@ -1,5 +1,9 @@
 export const proficiency = [
     {
+        "name": "React",
+        "value": 90
+    },
+    {
         "name": "Javascript",
         "value": 80
     },
@@ -12,16 +16,28 @@ export const proficiency = [
         "value": 80
     },
     {
-        "name": "React",
-        "value": 90
+        "name": "Typescript",
+        "value": 70
     },
     {
         "name": "MongoDB",
-        "value": 80
+        "value": 70
     },
     {
         "name": "Express",
         "value": 70
+    },
+    {
+        "name": "Git",
+        "value": 70
+    },
+    {
+        "name": "NestJS",
+        "value": 60
+    },
+    {
+        "name": "NextJS",
+        "value": 60
     },
     {
         "name": "Python",
@@ -42,10 +58,6 @@ export const proficiency = [
     {
         "name": "PHP",
         "value": 50
-    },
-    {
-        "name": "Git",
-        "value": 70
     },
     {
         "name": "PyTorch",

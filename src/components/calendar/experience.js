@@ -11,28 +11,12 @@ export const twentyOne = [
     {
         "month": "Feb",
         "year": "21",
-        "experience": [
-            {
-                "title": "www.ngdentalclinic.com",
-                "company": "",
-                "duration": "Feb '21 - Mar '21",
-                "detail": "Static website - details in Projects folder",
-                "type": PROJECT
-            }
-        ]
+        "experience": []
     },
     {
         "month": "Mar",
         "year": "21",
-        "experience": [
-            {
-                "title": "NextJS",
-                "company": "",
-                "duration": "Mar '21 - Apr '21",
-                "detail": "Booking website with NextJS (practice frontend dev)",
-                "type": PROJECT
-            }
-        ]
+        "experience": []
     },
     {
         "month": "Apr",
@@ -75,15 +59,7 @@ export const twentyOne = [
     {
         "month": "Jul",
         "year": "21",
-        "experience": [
-            {
-                "title": "Ah Her Food",
-                "company": "",
-                "duration": "Jul '21 - Oct '21",
-                "detail": "Order management site - details in Projects folder",
-                "type": PROJECT
-            }
-        ]
+        "experience": []
     },
     {
         "month": "Aug",
@@ -106,15 +82,7 @@ export const twentyOne = [
     {
         "month": "Oct",
         "year": "21",
-        "experience": [
-            {
-                "title": "ngjinshan.github.io",
-                "company": "",
-                "duration": "Oct '21",
-                "detail": "Portfolio site - details in Projects folder",
-                "type": PROJECT
-            }
-        ]
+        "experience": []
     },
     {
         "month": "Nov",
@@ -173,15 +141,7 @@ export const twenty = [
     {
         "month": "Jan",
         "year": "20",
-        "experience": [
-            {
-                "title": "TryAngle",
-                "company": "",
-                "duration": "Jan '20 - Mar '20",
-                "detail": "Hypercasual game - details in Projects folder",
-                "type": PROJECT
-            }
-        ]
+        "experience": []
     },
     {
         "month": "Feb",
@@ -191,15 +151,7 @@ export const twenty = [
     {
         "month": "Mar",
         "year": "20",
-        "experience": [
-            {
-                "title": "Attendance App",
-                "company": "Monash Malaysia",
-                "duration": "Mar '20 - Nov '20",
-                "detail": "Year long project - details in Projects folder",
-                "type": PROJECT
-            }
-        ]
+        "experience": []
     },
     {
         "month": "Apr",
@@ -219,15 +171,7 @@ export const twenty = [
     {
         "month": "Jul",
         "year": "20",
-        "experience": [
-            {
-                "title": "RMA Program",
-                "company": "",
-                "duration": "Jul '20",
-                "detail": "Sales management app - details in Projects folder",
-                "type": PROJECT
-            }
-        ]
+        "experience": []
     },
     {
         "month": "Aug",
@@ -271,33 +215,4 @@ export const twentyMobile = [
         "duration": "Dec '20 - Feb '21",
         "detail": "Full-stack dev | React, Express, MongoDB, AWS\nFull-stack dev | React, Django, PostgreSQL"
     },
-]
-
-export const eighteen = [
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-    {
-        "title": "Telesales Officer",
-        "company": "Singtel",
-        "duration": "Jun '18 - Sep '18",
-        "detail": ""
-    },  
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-    {"title": "","company": "","duration": "","detail":""},
-]
-
-export const eighteenMobile = [
-    {
-        "title": "Telesales Officer",
-        "company": "Singtel",
-        "duration": "Jun '18 - Sep '18",
-        "detail": ""
-    },   
 ]

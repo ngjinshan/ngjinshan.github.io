@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { twentyMobile, twentyOneMobile, twentyOne, twenty, WORK, PROJECT, COMP } from './experience';
+import { twentyMobile, twentyOneMobile, twentyOne, twenty, WORK, COMP } from './experience';
 
 import './style.css';
 
@@ -12,7 +12,7 @@ const Calendar = () => {
     const [month, setMonth] = useState('');
     const [year, setYear] = useState()
 
-    const renderDays = (data, index) => {
+    const renderExperiences = (data, index) => {
         const m = data.month;
         const y = data.year;
 
@@ -55,7 +55,7 @@ const Calendar = () => {
         }
 
 
-        const setEmpty = (data) => {
+        const setEmpty = () => {
                 setDuration()
                 setCompany()
                 setDetail()
@@ -64,7 +64,7 @@ const Calendar = () => {
         }
 
         return(
-            <div key={index} className="col-3 calendar-box" onClick={() => setEmpty(data.experience)} style={{cursor: `${data.detail ? 'pointer':'initial'}`}}>
+            <div key={index} className="col-3 calendar-box" onClick={() => setEmpty()} style={{cursor: `${data.detail ? 'pointer':'initial'}`}}>
                 <div className="duration">
                     {data.month}
                 </div>
@@ -143,7 +143,7 @@ const Calendar = () => {
                 </div>
                 <div style={{height: "65vh"}}>
                     <div className="row" style={{width: "100%", height: "80%"}}>
-                        {twentyOne.map(renderDays)}
+                        {twentyOne.map(renderExperiences)}
                     </div>
                 </div>
                 <div>
@@ -154,31 +154,10 @@ const Calendar = () => {
                 </div>
                 <div style={{height: "60vh"}}>
                     <div className="row" style={{width: "100%", height: "80%"}}>
-                        {twenty.map(renderDays)}
+                        {twenty.map(renderExperiences)}
                     </div>
                 </div>
             </div>
-            {/* <div className="row" style={{width: "100%", textAlign: "right"}}>
-                <div className="col-5 day">
-                    2018
-                </div>
-                <div className="col-5 day">
-                    2019
-                </div>
-                <div className="col-5 day">
-                    2020
-                </div>
-                <div className="col-5 day">
-                    2021
-                </div>
-                <div className="col-5 day">
-                    2022
-                </div>
-            </div>
-            <hr style={{marginBottom: "0", borderTop: "1px solid #3b3b3b"}}/>
-            <div className="row" style={{width: "100%"}}>
-                {experience.map(renderDays)}
-            </div> */}
         </div>
 
         <div className="calendar-mobile">
@@ -198,58 +177,6 @@ const Calendar = () => {
                     {twentyMobile.map(renderMobileMonths)}
                 </div>
             </div>
-            {/* <div className="row" style={{width: "100%", textAlign: "right"}}>
-                <div className="col-7 day">
-                    M
-                </div>
-                <div className="col-7 day">
-                    T
-                </div>
-                <div className="col-7 day">
-                    W
-                </div>
-                <div className="col-7 day">
-                    T
-                </div>
-                <div className="col-7 day">
-                    F
-                </div>
-                <div className="col-7 day">
-                    S
-                </div>
-                <div className="col-7 day">
-                    S
-                </div>
-            </div>
-            <hr style={{marginBottom: "0", borderTop: "1px solid #3b3b3b"}}/>
-            <div className="row" style={{width: "100%"}}>
-                {[0,0,0,0].map(renderMobileDaysEmpty)}
-                {experience.map(renderMobileDays)}
-                {calendarRemainingDays.map(renderMobileDaysDummy)}
-            </div>
-            <hr style={{marginTop: "8px", marginBottom: "0", borderTop: "1px solid #3b3b3b"}}/>
-            <div className="row" style={{width: "100%"}}>
-                <div className="calendar-mobile-detail container" style={{backgroundColor: '#050505', paddingLeft: '0', paddingRight: '0'}}>
-                    <div className="row" style={{paddingTop: '16px', paddingBottom: '16px'}}>
-                        <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                            <div style={{fontSize: 'small'}}>
-                                {title}
-                                <hr style={{marginTop: "8px", marginBottom: "8px"}}/>
-                                {company}
-                                <hr style={{marginTop: "8px", marginBottom: "8px"}}/>
-                                {detail && 
-                                <ul style={{paddingLeft: "16px"}}>
-                                    {detail.split("\n").map(renderMobileDetail)}
-                                </ul>
-                                } 
-                            </div>
-                            <div style={{color: 'white', fontSize: 'small', fontWeight: '100', textAlign: 'right'}}>
-                                {duration}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </div>
         </>
     )
