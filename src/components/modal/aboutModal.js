@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Modal, ModalBody } from 'react-bootstrap';
 import Barchart from '../barchart';
 import FolderLeftPanel from '../folderLeftPanel';
-import img from 'src/images/about.jpg';
+// import img from 'src/images/about.jpg';
+import img from 'src/images/dp.jpg';
 
 import './style.css'
 
