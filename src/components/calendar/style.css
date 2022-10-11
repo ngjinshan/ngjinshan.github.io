@@ -22,6 +22,7 @@
     border: 1px solid #3b3b3b;
     overflow-x: auto;
     color: #efefef;
+    height: 150px;
 }
 
 .calendar-mobile-box {
@@ -118,6 +119,7 @@
 
 .calendar-container {
     overflow-y: auto;
+    padding-bottom: 20px;
 }
 
 /*TABLET VIEW*/

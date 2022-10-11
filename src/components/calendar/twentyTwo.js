@@ -1,4 +1,6 @@
-export const YEAR_DESKTOP_DRAFT = [
+import {WORK, PROJECT, COMP} from './types';
+
+export const twentyTwo = [
     {
         "month": "Jan",
         "year": "",
@@ -21,8 +23,18 @@ export const YEAR_DESKTOP_DRAFT = [
     },
     {
         "month": "May",
-        "year": "",
-        "experience": []
+        "year": "22",
+        "experience": [
+            {
+                "title": "Research Assistant",
+                "company": "Monash University",
+                "duration": "May '22 - Jul '22",
+                "detail": [
+                    "Developed website for a project related to NLP using React Typescript"
+                ],
+                "type": WORK 
+            }
+        ]
     },
     {
         "month": "Jun",
@@ -46,8 +58,18 @@ export const YEAR_DESKTOP_DRAFT = [
     },
     {
         "month": "Oct",
-        "year": "",
-        "experience": []
+        "year": "22",
+        "experience": [
+            {
+                "title": "Software Developer",
+                "company": "Monash University",
+                "duration": "Oct '22 - Present",
+                "detail": [
+                    "Designing a database to keep track of companies that have or had contracts with Monash"
+                ],
+                "type": WORK
+            }
+        ]
     },
     {
         "month": "Nov",
@@ -59,26 +81,4 @@ export const YEAR_DESKTOP_DRAFT = [
         "year": "",
         "experience": []
     }
-]
-
-export const EXPERIENCE_DRAFT = {
-    "title": "",
-    "company": "",
-    "duration": "",
-    "detail": [
-        ""
-        ],
-    "type": PROJECT | WORK | COMP
-}
-
-
-export const MOBILE_DRAFT = [
-    {
-        "title": "",
-        "company": "",
-        "duration": "",
-        "detail": [
-            ""
-            ]
-    },
 ]

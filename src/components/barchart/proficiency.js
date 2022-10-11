@@ -58,9 +58,5 @@ export const proficiency = [
     {
         "name": "PHP",
         "value": 50
-    },
-    {
-        "name": "PyTorch",
-        "value": 30
-    },
+    }
 ]

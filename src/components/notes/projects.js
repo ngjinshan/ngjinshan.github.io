@@ -1,5 +1,22 @@
 export const projects = [
     {
+        "name": "ADHD Simulation",
+        "link": "",
+        "detail": `Conducted research and developed VR environment to simulate ADHD symptoms using Unity as an
+        empathatic approach for requirements engineering`,
+        "lesson": "",
+        "stack": "Unity",
+        "date": "Jul '22 - Oct '22"
+    },
+    {
+        "name": "Minizinc Auto-grader",
+        "link": "",
+        "detail": `Designed and developed the frontend for an auto-grading platform for my final year project`,
+        "lesson": "",
+        "stack": "React, Typescript",
+        "date": "Mar '22 - Oct '22"
+    },
+    {
         "name": "shindo.me",
         "link": "https://shindo.me",
         "detail": `Designed and developed a static site for an NFT project. (not affiliated)`,

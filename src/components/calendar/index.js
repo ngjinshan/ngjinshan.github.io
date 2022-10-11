@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { twentyMobile, twentyOneMobile, twentyOne, twenty, WORK, COMP } from './experience';
+
+import { WORK, PROJECT, COMP } from './types';
+import { twentyTwo } from './twentyTwo';
+import { twentyOne } from './twentyOne';
+import { twenty } from './twenty';
+import { MobileCalendar } from './mobileCalendar';
 
 import './style.css';
 
@@ -75,10 +80,10 @@ const Calendar = () => {
                 <div class="box-right arrow-left" style={{display: `${(month === data.month && year === data.year)? 'initial' : 'none'}`}}>
                     <div className="duration" style={{color: "#7c7c7c", paddingBottom: "8px"}}>
                         <span style={{fontWeight: "700"}}>{company}</span> 
-                        {company && " | "}
+                        {company && <br/>}
                         {duration}
                     </div>
-                    {detail.split("\n").map(renderDetail)}
+                    {detail.map(renderDetail)}
                 </div>
                 }
 
@@ -86,10 +91,10 @@ const Calendar = () => {
                 <div class="box-left arrow-right" style={{display: `${(month === data.month && year === data.year) ? 'initial' : 'none'}`}}>
                     <div className="duration" style={{color: "#7c7c7c", paddingBottom: "8px"}}>
                         <span style={{fontWeight: "700"}}>{company}</span> 
-                        {company && " | "}
+                        {company && <br/>}
                         {duration}
                     </div>
-                    {detail.split("\n").map(renderDetail)}
+                    {detail.map(renderDetail)}
                 </div>
                 }
 
@@ -97,37 +102,21 @@ const Calendar = () => {
         )
     }
 
-    const renderMobileDetail = (data) => {
+    const CalendarYear = (props) => {
         return(
-            <li>
-                {data}
-            </li>
-        )
-    }
-
-    const renderMobileMonths = (data) => {
-        return(
-            <div>
-                <div style={{fontSize: 'small'}}>
-                    <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                        <div>
-                            <span style={{fontWeight: "700"}}>{data.title}</span>
-                            <br/>
-                            {data.company}
-                        </div>
-                        <div style={{color: 'white', fontSize: 'smaller', fontWeight: '100', textAlign: 'right'}}>
-                            {data.duration}
-                        </div>
+            <>
+                <div>
+                    <div className="row" style={{fontSize: "x-large", color: "white", fontWeight: "700", paddingTop: "20px"}}>
+                        {props.year}
                     </div>
-                    <br/>
-                    {data.detail && 
-                    <ul style={{paddingLeft: "16px"}}>
-                        {data.detail.split("\n").map(renderMobileDetail)}
-                    </ul>
-                    } 
+                    <hr style={{marginBottom: "0px", color: "transparent"}}/>
                 </div>
-                <hr style={{marginTop: "8px", marginBottom: "8px"}}/>
-            </div>
+                <div style={{height: "fit-content"}}>
+                    <div className="row" style={{width: "100%", height: "80%"}}>
+                        {props.data.map(renderExperiences)}
+                    </div>
+                </div>
+            </>
         )
     }
 
@@ -135,47 +124,17 @@ const Calendar = () => {
         <>
         <div className="calendar">
             <div className="calendar-container" style={{height: "100%", overflowY: "auto"}}>
-                <div>
-                    <div className="row" style={{fontSize: "x-large", color: "white", fontWeight: "700", paddingTop: "16px"}}>
-                        2021
-                    </div>
-                    <hr style={{marginBottom: "0px", color: "transparent"}}/>
-                </div>
-                <div style={{height: "65vh"}}>
-                    <div className="row" style={{width: "100%", height: "80%"}}>
-                        {twentyOne.map(renderExperiences)}
-                    </div>
-                </div>
-                <div>
-                    <div className="row" style={{fontSize: "x-large", color: "white", fontWeight: "700"}}>
-                        2020
-                    </div>
-                    <hr style={{marginBottom: "0px", color: "transparent"}}/>
-                </div>
-                <div style={{height: "60vh"}}>
-                    <div className="row" style={{width: "100%", height: "80%"}}>
-                        {twenty.map(renderExperiences)}
-                    </div>
-                </div>
+                <CalendarYear year={2022} data={twentyTwo}/>
+                <CalendarYear year={2021} data={twentyOne}/>
+                <CalendarYear year={2020} data={twenty}/>
             </div>
         </div>
 
         <div className="calendar-mobile">
             <div className="calendar-mobile-container" style={{height: "100%", overflowY: "auto"}}>
-                <div style={{minHeight: "65vh", paddingBottom: "16px"}}>
-                    <div className="calendar-mobile-year" style={{fontSize: "x-large", color: "#fd3d38", fontWeight: "700"}}>
-                        2021
-                    </div>
-                    <hr/>
-                    {twentyOneMobile.map(renderMobileMonths)}
-                </div>
-                <div style={{minHeight: "62.5vh"}}>
-                    <div className="calendar-mobile-year" style={{fontSize: "x-large", color: "#fd3d38", fontWeight: "700"}}>
-                        2020
-                    </div>
-                    <hr/>
-                    {twentyMobile.map(renderMobileMonths)}
-                </div>
+                <MobileCalendar year={2022} data={twentyTwo}/>
+                <MobileCalendar year={2021} data={twentyOne}/>
+                <MobileCalendar year={2020} data={twenty}/>
             </div>
         </div>
         </>

@@ -278,6 +278,7 @@ turn off the slide up animation for some reason
     }
     .folder-right-panel {
         border-radius: 8px !important;
+        padding-top: 16px;
     }
 }
 
