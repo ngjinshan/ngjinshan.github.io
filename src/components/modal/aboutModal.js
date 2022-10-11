@@ -32,7 +32,7 @@ const AboutModal = (props) => {
                                     <br/>
                                     <div className="text-center">
                                         <p>
-                                            3rd year Software Engineering student and aspiring programmer.
+                                            Final year Software Engineering student and aspiring programmer.
                                         </p>
                                     </div>
                                 </div>
