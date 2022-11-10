@@ -29,8 +29,7 @@ const Calendar = () => {
 
     const calculateMarginTop = useMemo(() => {
         if (id != "") {
-            const position = id.substring(id.length - 1);
-            const marginTop = -3.5 - multiplier * 2 + 2 * position;
+            const marginTop = -3.5 - multiplier * 2;
             return marginTop.toString() + "em";
         }
         return "";
@@ -77,7 +76,7 @@ const Calendar = () => {
                             setMonth(m);
                             setYear(y);
                             setId("experience-box-" + index + i);
-                            setMultiplier(experience.experience.length - 1);
+                            setMultiplier(experience.experience.length - 1 - i);
                         }}
                         className="title-company noselect"
                         style={{
