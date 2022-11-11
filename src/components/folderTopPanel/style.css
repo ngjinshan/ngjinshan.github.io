@@ -6,6 +6,7 @@
     border-top-right-radius: 8px;
     position: sticky;
     top: 0;
+    z-index: 220;
 }
 
 .folder-top-panel .folder-bar {
@@ -17,6 +18,7 @@
     display: flex;
     margin-bottom: 0;
 }
+
 .folder-top-panel .folder-red {
     background-color: #E94B35;
     border-radius: 100%;
@@ -24,11 +26,13 @@
     height: 13px;
     margin: 0;
     left: 0%;
-    position:relative;
+    position: relative;
 }
+
 .folder-top-panel .folder-red:hover {
     background-color: red;
 }
+
 .folder-top-panel .folder-yellow {
     background-color: #febc2f;
     border-radius: 100%;
@@ -36,11 +40,13 @@
     height: 13px;
     margin: 0;
     left: 0.75%;
-    position:relative;
+    position: relative;
 }
+
 .folder-top-panel .folder-yellow:hover {
     background-color: #ff8c00;
 }
+
 .folder-top-panel .folder-green {
     background-color: #27c840;
     border-radius: 100%;
@@ -48,7 +54,7 @@
     height: 13px;
     margin: 0;
     left: 1.5%;
-    position:relative;
+    position: relative;
 }
 
 /*TABLET VIEW*/
