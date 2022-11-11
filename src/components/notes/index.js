@@ -31,10 +31,13 @@ const Notes = () => {
                 <div className="note-date">{activeProject.date}</div>
                 <div className="note-company">{activeProject.company}</div>
                 <div className="note-title">{activeProject.title}</div>
+                <br />
                 <div className="note-detail">
-                    {activeProject.detail.map((deets) => (
-                        <li>{deets}</li>
-                    ))}
+                    <ul style={{ paddingLeft: "16px" }}>
+                        {activeProject.detail.map((deets) => (
+                            <li>{deets}</li>
+                        ))}
+                    </ul>
                 </div>
                 <hr />
             </div>
