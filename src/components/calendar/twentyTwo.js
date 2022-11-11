@@ -1,84 +1,87 @@
-import {WORK, PROJECT, COMP} from './types';
-
 export const twentyTwo = [
     {
-        "month": "Jan",
-        "year": "",
-        "experience": []
+        month: "Jan",
+        year: "",
+        projects: [],
     },
     {
-        "month": "Feb",
-        "year": "",
-        "experience": []
+        month: "Feb",
+        year: "",
+        projects: [],
     },
     {
-        "month": "Mar",
-        "year": "",
-        "experience": []
-    },
-    {
-        "month": "Apr",
-        "year": "",
-        "experience": []
-    },
-    {
-        "month": "May",
-        "year": "22",
-        "experience": [
+        month: "Mar",
+        year: "",
+        projects: [
             {
-                "title": "Research Assistant",
-                "company": "Monash University",
-                "duration": "May '22 - Jul '22",
-                "detail": [
-                    "Developed website for a project related to NLP using React Typescript"
-                ],
-                "type": WORK 
-            }
-        ]
-    },
-    {
-        "month": "Jun",
-        "year": "",
-        "experience": []
-    },
-    {
-        "month": "Jul",
-        "year": "",
-        "experience": []
-    },
-    {
-        "month": "Aug",
-        "year": "",
-        "experience": []
-    },
-    {
-        "month": "Sep",
-        "year": "",
-        "experience": []
-    },
-    {
-        "month": "Oct",
-        "year": "22",
-        "experience": [
+                name: "Minizinc Auto-grader",
+                link: "",
+                detail: `Designed and developed the frontend for an auto-grading platform for my final year project`,
+                stack: "React, Typescript",
+                date: "Mar '22 - Oct '22",
+            },
             {
-                "title": "Software Developer",
-                "company": "Monash University",
-                "duration": "Oct '22 - Present",
-                "detail": [
-                    "Designing a database to keep track of companies that have or had contracts with Monash"
-                ],
-                "type": WORK
-            }
-        ]
+                name: "shindo.me",
+                link: "https://shindo.me",
+                detail: `Designed and developed a static site for an NFT project. (not affiliated)`,
+                lesson: "",
+                stack: "React, Firebase",
+                date: "Mar '22 - Apr '22",
+            },
+        ],
     },
     {
-        "month": "Nov",
-        "year": "",
-        "experience": []
+        month: "Apr",
+        year: "",
+        projects: [],
     },
     {
-        "month": "Dec",
-        "year": "",
-        "experience": []
-    }
-]
+        month: "May",
+        year: "22",
+        projects: [],
+    },
+    {
+        month: "Jun",
+        year: "",
+        projects: [],
+    },
+    {
+        month: "Jul",
+        year: "",
+        projects: [
+            {
+                name: "ADHD Simulation",
+                link: "",
+                detail: `Conducted research and developed VR environment to simulate ADHD symptoms using Unity as an
+        empathatic approach for requirements engineering`,
+                stack: "Unity",
+                date: "Jul '22 - Oct '22",
+            },
+        ],
+    },
+    {
+        month: "Aug",
+        year: "",
+        projects: [],
+    },
+    {
+        month: "Sep",
+        year: "",
+        projects: [],
+    },
+    {
+        month: "Oct",
+        year: "22",
+        projects: [],
+    },
+    {
+        month: "Nov",
+        year: "",
+        projects: [],
+    },
+    {
+        month: "Dec",
+        year: "",
+        projects: [],
+    },
+];

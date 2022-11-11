@@ -18,6 +18,12 @@
 }
 
 .note-simplified-title {
+    font-size: small;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.note-simplified-company {
     font-weight: 700;
 }
 
@@ -33,9 +39,14 @@
     padding-bottom: 16px;
 }
 
-.note-name {
+.note-company {
     font-size: large;
     font-weight: 700;
+}
+
+.note-title {
+    font-style: italic;
+    font-size: medium;
 }
 
 .note-detail {
@@ -65,19 +76,21 @@
 }
 
 @keyframes slideFromRight {
-    0%{
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
 
 @keyframes slideFromLeft {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(100%);
     }
 }
@@ -94,6 +107,7 @@
     .note-mobile {
         display: none !important;
     }
+
     .note-desktop {
         display: flex !important;
     }

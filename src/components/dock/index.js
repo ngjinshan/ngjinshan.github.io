@@ -1,24 +1,23 @@
-import React, { useState } from 'react';
-import AboutModal from '../modal/aboutModal'
-import ExperienceModal from '../modal/experienceModal'
-import ContactModal from '../modal/contactModal'
-import ProjectModal from '../modal/projectModal'
+import React, { useState } from "react";
+import AboutModal from "../modal/aboutModal";
+import ProjectModal from "../modal/projectModal";
+import ContactModal from "../modal/contactModal";
+import ExperienceModal from "../modal/experienceModal";
 
-import './style.css';
+import "./style.css";
 
 const Dock = () => {
+    const [showAboutModal, setShowAboutModal] = useState(false);
+    const [showExperienceModal, setShowExperienceModal] = useState(false);
+    const [showContactModal, setShowContactModal] = useState(false);
+    const [showProjectModal, setShowProjectModal] = useState(false);
 
-    const [showAboutModal, setShowAboutModal] = useState(false)
-    const [showExperienceModal, setShowExperienceModal] = useState(false)
-    const [showContactModal, setShowContactModal] = useState(false)
-    const [showProjectModal, setShowProjectModal] = useState(false)
-
-    return(
+    return (
         <div className="main-contain">
             <AboutModal show={showAboutModal} onHide={() => setShowAboutModal(false)}></AboutModal>
             <ExperienceModal show={showExperienceModal} onHide={() => setShowExperienceModal(false)}></ExperienceModal>
             <div className="contact-modal">
-            <ContactModal show={showContactModal} onHide={() => setShowContactModal(false)}></ContactModal>
+                <ContactModal show={showContactModal} onHide={() => setShowContactModal(false)}></ContactModal>
             </div>
             <ProjectModal show={showProjectModal} onHide={() => setShowProjectModal(false)}></ProjectModal>
             <div className="container">
@@ -27,7 +26,7 @@ const Dock = () => {
                         <img src="https://image.ibb.co/mHAnwK/nav.png" className="img-fluid mirror" alt="nav"></img>
                     </span>
                     <div className="dock-nav">
-                        <ul>							
+                        <ul>
                             {/* <li>
                                 <img src="http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/finder-icon.png" className="img-fluid" alt="finder"></img>
                             </li>							
@@ -69,9 +68,9 @@ const Dock = () => {
                         </ul>
                     </div>
                 </div>
-            </div>			
+            </div>
         </div>
-    )
-}
+    );
+};
 
 export default Dock;

@@ -23,6 +23,7 @@
     overflow-x: auto;
     color: #efefef;
     height: 140px;
+    overflow-y: hidden;
 }
 
 .calendar-mobile-box {
@@ -34,13 +35,14 @@
     background-color: rgb(26, 26, 26);
 }
 
-.duration {
+.date {
     /* font-size: small;
     color: #595959;
     text-align: right; */
     font-size: small;
     color: #fd3d38;
     text-align: left;
+    margin-bottom: 8px;
 }
 
 .title-company {
@@ -121,6 +123,16 @@
 .calendar-container {
     overflow-y: auto;
     padding-bottom: 20px;
+}
+
+.project-link a {
+    color: #dedede;
+    font-size: small;
+    text-decoration: none;
+}
+
+.project-link a:hover {
+    color: #0784ff;
 }
 
 /*TABLET VIEW*/

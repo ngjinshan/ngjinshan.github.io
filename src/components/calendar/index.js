@@ -1,20 +1,23 @@
 import React, { useMemo, useState } from "react";
 
-import { WORK, PROJECT, COMP } from "./types";
 import { twentyTwo } from "./twentyTwo";
 import { twentyOne } from "./twentyOne";
 import { twenty } from "./twenty";
 import { MobileCalendar } from "./mobileCalendar";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+
 import "./style.css";
 
 const Calendar = () => {
-    const [duration, setDuration] = useState("");
+    const [date, setDate] = useState("");
     // const [title, setTitle] = useState('');
-    const [company, setCompany] = useState("");
     const [detail, setDetail] = useState("");
     const [month, setMonth] = useState("");
     const [year, setYear] = useState();
+    const [stack, setStack] = useState("");
+    const [link, setLink] = useState("");
 
     const [id, setId] = useState("");
     const [multiplier, setMultiplier] = useState(0);
@@ -35,103 +38,107 @@ const Calendar = () => {
         return "";
     }, [multiplier, id]);
 
-    const renderExperiences = (experience, index) => {
-        const m = experience.month;
-        const y = experience.year;
+    const renderProjects = (project, index) => {
+        const m = project.month;
+        const y = project.year;
 
-        const renderDetail = (data) => {
-            return (
-                <>
-                    {data}
-                    <hr style={{ marginTop: "8px", marginBottom: "8px" }} />
-                </>
-            );
-        };
-
-        const renderExperience = (data, i) => {
+        const renderProject = (data, i) => {
             const setBox = () => {
-                setDuration(data.duration);
-                setCompany(data.company);
+                setDate(data.date);
                 setDetail(data.detail);
+                setStack(data.stack);
+                setLink(data.link);
             };
-
-            let color = "black";
-            let backgroundColor = "#c7aa49";
-
-            if (data.type === WORK) {
-                color = "#efefef";
-                backgroundColor = "#1e4962";
-            } else if (data.type === COMP) {
-                color = "#efefef";
-                backgroundColor = "green";
-            }
 
             return (
                 <>
                     <div
-                        id={"experience-box-" + index + i}
+                        id={"project-box-" + data.name}
                         onClick={(e) => {
                             e.stopPropagation();
                             setBox();
                             setMonth(m);
                             setYear(y);
-                            setId("experience-box-" + index + i);
-                            setMultiplier(experience.experience.length - 1 - i);
+                            setId("project-box-" + data.name);
+                            setMultiplier(project.projects.length - 1 - i);
                         }}
                         className="title-company noselect"
                         style={{
                             cursor: "pointer",
                             textAlign: "left",
-                            color: color,
-                            backgroundColor: backgroundColor,
+                            color: "#efefef",
+                            backgroundColor: "#1e4962",
                             marginBottom: "6px",
                             borderRadius: "6px",
                             padding: "1px 6px",
                             width: "fit-content",
                         }}
                     >
-                        {data.title}
+                        {data.name}
                     </div>
                 </>
             );
         };
 
         const setEmpty = () => {
-            setDuration();
-            setCompany();
+            setDate();
             setDetail();
             setMonth();
             setYear();
+            setLink();
+            setStack();
         };
 
         return (
-            <div key={index} className="col-3 calendar-box" onClick={() => setEmpty()} style={{ cursor: `${experience.detail ? "pointer" : "initial"}` }}>
-                <div className="duration">{experience.month}</div>
-                <br />
-                {experience.experience.map(renderExperience)}
+            <div key={index} className="col-3 calendar-box" onClick={() => setEmpty()} style={{ cursor: `${project.detail ? "pointer" : "initial"}` }}>
+                <div className="date">{project.month}</div>
+                {project.projects.map(renderProject)}
 
                 {month && (index + 1) % 4 !== 0 && (
                     <div
                         class="box-right arrow-left"
-                        style={{ display: `${month === experience.month && year === experience.year ? "initial" : "none"}`, marginLeft: calculateMarginLeft, marginTop: calculateMarginTop }}
+                        style={{ display: `${month === project.month && year === project.year ? "initial" : "none"}`, marginLeft: calculateMarginLeft, marginTop: calculateMarginTop }}
+                        onClick={(e) => {
+                            e.stopPropagation();
+                        }}
                     >
-                        <div className="duration" style={{ color: "#7c7c7c", paddingBottom: "8px" }}>
-                            <span style={{ fontWeight: "700" }}>{company}</span>
-                            {company && <br />}
-                            {duration}
+                        <div style={{ color: "#7c7c7c", display: "flex", justifyContent: "space-between" }}>
+                            <span style={{ fontWeight: "700" }}>{stack}</span>
+                            {link.length > 0 && (
+                                <span className="project-link">
+                                    <a href={link} target="_blank" rel="noreferrer">
+                                        &nbsp;&nbsp; <FontAwesomeIcon icon={faExternalLinkAlt}></FontAwesomeIcon>
+                                    </a>
+                                </span>
+                            )}
                         </div>
-                        {detail.map(renderDetail)}
+                        <div style={{ color: "#7c7c7c", paddingBottom: "8px" }}>{date}</div>
+                        {detail}
+                        <hr style={{ marginTop: "8px", marginBottom: "8px" }} />
                     </div>
                 )}
 
                 {month && (index + 1) % 4 === 0 && (
-                    <div class="box-left arrow-right" style={{ display: `${month === experience.month && year === experience.year ? "initial" : "none"}`, marginTop: calculateMarginTop }}>
-                        <div className="duration" style={{ color: "#7c7c7c", paddingBottom: "8px" }}>
-                            <span style={{ fontWeight: "700" }}>{company}</span>
-                            {company && <br />}
-                            {duration}
+                    <div
+                        class="box-left arrow-right"
+                        style={{ display: `${month === project.month && year === project.year ? "initial" : "none"}`, marginTop: calculateMarginTop }}
+                        onClick={(e) => {
+                            e.stopPropagation();
+                        }}
+                    >
+                        <div style={{ color: "#7c7c7c", display: "flex", justifyContent: "space-between" }}>
+                            <span style={{ fontWeight: "700" }}>{stack}</span>
+                            {link.length > 0 && (
+                                <span className="project-link">
+                                    <a href={link} target="_blank" rel="noreferrer">
+                                        &nbsp;&nbsp; <FontAwesomeIcon icon={faExternalLinkAlt}></FontAwesomeIcon>
+                                    </a>
+                                </span>
+                            )}
                         </div>
-                        {detail.map(renderDetail)}
+                        <div style={{ color: "#7c7c7c", paddingBottom: "8px" }}>{date}</div>
+                        {detail}
+                        <hr style={{ marginTop: "8px", marginBottom: "8px" }} />
                     </div>
                 )}
             </div>
@@ -149,7 +156,7 @@ const Calendar = () => {
                 </div>
                 <div style={{ height: "fit-content" }}>
                     <div className="row" style={{ width: "100%", height: "80%" }}>
-                        {props.data.map(renderExperiences)}
+                        {props.data.map(renderProjects)}
                     </div>
                 </div>
             </>
