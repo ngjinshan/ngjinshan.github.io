@@ -72,6 +72,7 @@ const Calendar = () => {
                             borderRadius: "6px",
                             padding: "1px 6px",
                             width: "fit-content",
+                            maxWidth: "150px",
                         }}
                     >
                         {data.name}
