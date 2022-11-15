@@ -106,10 +106,9 @@ const Notes = () => {
                                 {mobileActive && (
                                     <div onClick={() => setMobileActive()}>
                                         <span style={{ fontSize: "x-large", fontWeight: "700" }}>&#60;</span>
-                                        <span> experience</span>
                                     </div>
                                 )}
-                                {!mobileActive && <span style={{ fontSize: "x-large", fontWeight: "700" }}>experience</span>}
+                                {!mobileActive && <span style={{ fontSize: "x-large", fontWeight: "700" }}>Experience</span>}
                             </div>
                         </div>
                     </div>
