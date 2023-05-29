@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 
+import { twentyThree } from "./twentyThree";
 import { twentyTwo } from "./twentyTwo";
 import { twentyOne } from "./twentyOne";
 import { twenty } from "./twenty";
@@ -168,6 +169,7 @@ const Calendar = () => {
         <>
             <div className="calendar">
                 <div className="calendar-container" style={{ height: "100%", overflowY: "auto" }}>
+                    <CalendarYear year={2023} data={twentyThree} />
                     <CalendarYear year={2022} data={twentyTwo} />
                     <CalendarYear year={2021} data={twentyOne} />
                     <CalendarYear year={2020} data={twenty} />
@@ -176,6 +178,7 @@ const Calendar = () => {
 
             <div className="calendar-mobile">
                 <div className="calendar-mobile-container" style={{ height: "100%", overflowY: "auto" }}>
+                    <MobileCalendar year={2023} data={twentyThree} />
                     <MobileCalendar year={2022} data={twentyTwo} />
                     <MobileCalendar year={2021} data={twentyOne} />
                     <MobileCalendar year={2020} data={twenty} />
