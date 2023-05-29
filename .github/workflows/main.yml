@@ -28,6 +28,7 @@ jobs:
 
       - name: Prepare deployment
         run: |
+          git config user.email "ngjinshan99@gmail.com"
           git checkout --orphan gh-pages
           git --work-tree build add --all
           git --work-tree build commit -m "Deploy"
