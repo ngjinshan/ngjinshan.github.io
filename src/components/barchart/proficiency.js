@@ -1,7 +1,7 @@
 export const proficiency = [
   {
     name: "React",
-    value: 90,
+    value: 100,
   },
   {
     name: "Typescript",
@@ -9,19 +9,19 @@ export const proficiency = [
   },
   {
     name: "Javascript",
-    value: 80,
-  },
-  {
-    name: "HTML5",
-    value: 80,
+    value: 90,
   },
   {
     name: "CSS",
-    value: 80,
+    value: 90,
+  },
+  {
+    name: "HTML5",
+    value: 90,
   },
   {
     name: "MongoDB",
-    value: 70,
+    value: 80,
   },
   {
     name: "SQL",
