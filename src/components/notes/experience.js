@@ -6,7 +6,7 @@ export const experience = [
     detail: [
       "Designing relational database with more than 15 tables and implementing on Airtable to migrate from manual record keeping process on Google Drive",
       "Developing dashboards and interfaces on Airtable to monitor companies with agreements with Monash, while implementing custom JavaScript scripts for automating data manipulation and workflow tasks",
-      "Designing and developing the Companies on Campus client portal using React.ts, Express.js, Docker andNGINX, AWS EC2",
+      "Designing and developing the Companies on Campus client portal using React.ts, Express.js, Docker, NGINX, AWS EC2, Red Hat Enterprise Linux",
       "In charge of discussing and collaborating with different teams and departments in Monash to meet business requirements",
     ],
   },
