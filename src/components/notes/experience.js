@@ -6,7 +6,7 @@ export const experience = [
     detail: [
       "Executing small-scale database migrations and modernizations from on-premise and other cloud providers to AWS",
       "Documenting a complete runbook on common database migration and modernization pathways using AWS MigOps to empower the APJ CSM community with the knowledge and tools needed for precise guidance on database migrations to AWS",
-      "Documenting the implementation of AWS Cloud Intelligent Dashboards, encompassing CUDOS, Cost Intelligence Dashboard, and The KPI and Modernization Dashboard to provide the CSM community with the knowledge to provide cost-effective solutions to their customers",
+      "Documenting the implementation of AWS Cloud Intelligent Dashboards to provide the CSM community with the knowledge to provide cost-effective solutions to their customers",
     ],
   },
   {
