@@ -8,6 +8,7 @@ export const experience = [
       "Documenting a complete runbook on common database migration and modernization pathways using AWS MigOps to empower the APJ CSM community with the knowledge and tools needed for precise guidance on database migrations to AWS",
       "Documenting the implementation of AWS Cloud Intelligent Dashboards to provide the CSM community with the knowledge to provide cost-effective solutions to their customers",
     ],
+    year: 23,
   },
   {
     title: "Software Developer",
@@ -19,6 +20,7 @@ export const experience = [
       "Pioneered and spearheaded the development of the first-ever Companies on Campus client portal using React.ts, Express.js, Docker, NGINX, AWS EC2, and Red Hat Enterprise Linux",
       "Served as the point of contact between different teams and departments in Monash to meet business requirements",
     ],
+    year: 22,
   },
   {
     title: "Business Analyst Intern",
@@ -27,6 +29,7 @@ export const experience = [
     detail: [
       "Involved in full-stack development of a core product, GIANT, using ASP.NET Core, Vue.js and MongoDB",
     ],
+    year: 21,
   },
   {
     title: "Web Dev Intern",
@@ -35,6 +38,7 @@ export const experience = [
     detail: [
       "Involved in full-stack development of in-house service portal using PHP, JavaScript, HTML5, CSS and MySQL",
     ],
+    year: 21,
   },
   {
     title: "Research Assistant",
@@ -44,6 +48,7 @@ export const experience = [
       "Trained a deep-learning AI model to diagnose breast cancer using histopathological images using PyTorch along with Lime to explain the model results",
       "Developed API to use that trained model using Flask and a website using React",
     ],
+    year: 21,
   },
   {
     title: "Software Engineer Intern",
@@ -53,5 +58,6 @@ export const experience = [
       "Spearheaded a demo bank system which displayed real-time direct debit transaction using the MERN stack and AWS EC2 which was used to present to all major banks in Malaysia to demonstrate upcoming real time payment capability",
       "Developed a new subscription-based system to offer their services/products as subscriptions using React, DjangoRestFramework and PostgreSQL",
     ],
+    year: 20,
   },
 ];

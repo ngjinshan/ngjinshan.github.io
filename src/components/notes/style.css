@@ -1,135 +1,135 @@
 .notes {
-    background-color: #161616;
-    width: 100% !important;
-    height: 100% !important;
-    border-bottom-right-radius: 8px;
-    padding: 16px 16px;
-    color: #dedede;
+  background-color: #161616;
+  width: 100% !important;
+  height: 100% !important;
+  border-bottom-right-radius: 8px;
+  padding: 16px 16px;
+  color: #dedede;
 }
 
 .note-simplified {
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .note-simplified.active {
-    background-color: #464646;
+  background-color: #464646;
 }
 
 .note-simplified-title {
-    font-size: small;
-    font-weight: 700;
-    font-style: italic;
+  font-size: small;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .note-simplified-company {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .note-simplified-date {
-    font-size: small;
-    font-weight: 100;
+  font-size: small;
+  font-weight: 100;
 }
 
 .note-date {
-    font-size: small;
-    font-weight: 100;
-    text-align: center;
-    padding-bottom: 16px;
+  font-size: small;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 16px;
 }
 
 .note-company {
-    font-size: large;
-    font-weight: 700;
+  font-size: large;
+  font-weight: 700;
 }
 
 .note-title {
-    font-style: italic;
-    font-size: medium;
+  font-style: italic;
+  font-size: medium;
 }
 
 .note-detail {
-    font-size: small;
+  font-size: small;
 }
 
 .note-link a {
-    color: #dedede;
-    font-size: small;
-    text-decoration: none;
+  color: #dedede;
+  font-size: small;
+  text-decoration: none;
 }
 
 .note-link a:hover {
-    color: #0784ff;
+  color: #0784ff;
 }
 
 .note-detail-mobile {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 220;
-    background-color: #272727;
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-    animation: slideFromRight .1s linear 0s 1 forwards;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 220;
+  background-color: #272727;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  animation: slideFromRight 0.1s linear 0s 1 forwards;
 }
 
 @keyframes slideFromRight {
-    0% {
-        transform: translateX(100%);
-    }
+  0% {
+    transform: translateX(100%);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideFromLeft {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(100%);
-    }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /*TABLET VIEW*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .note-desktop {
-        display: none !important;
-    }
+  .note-desktop {
+    display: none !important;
+  }
 }
 
 /*BIG TABLET VIEW*/
 @media only screen and (min-width: 1024px) {
-    .note-mobile {
-        display: none !important;
-    }
+  .note-mobile {
+    display: none !important;
+  }
 
-    .note-desktop {
-        display: flex !important;
-    }
+  .note-desktop {
+    display: flex !important;
+  }
 }
 
 /*DESKTOP VIEW*/
 @media only screen and (min-width: 1025px) {
-    .note-mobile {
-        display: none !important;
-    }
+  .note-mobile {
+    display: none !important;
+  }
 }
 
 /*MOBILE VIEW*/
 @media only screen and (max-width: 767px) {
-    .note-desktop {
-        display: none !important;
-    }
+  .note-desktop {
+    display: none !important;
+  }
 }
 
 /*SUPER SMALL VIEW*/
 @media only screen and (max-width: 330px) {
-    .note-desktop {
-        display: none !important;
-    }
+  .note-desktop {
+    display: none !important;
+  }
 }
