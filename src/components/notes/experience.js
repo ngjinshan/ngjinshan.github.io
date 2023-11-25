@@ -14,10 +14,10 @@ export const experience = [
     company: "Monash University",
     date: "Oct '22 - Nov '23",
     detail: [
-      "Designing relational database with more than 15 tables and implementing on Airtable to migrate from manual record keeping process on Google Drive",
-      "Developing dashboards and interfaces on Airtable to monitor companies with agreements with Monash, while implementing custom JavaScript scripts for automating data manipulation and workflow tasks",
-      "Designing and developing the Companies on Campus client portal using React.ts, Express.js, Docker, NGINX, AWS EC2, Red Hat Enterprise Linux",
-      "In charge of discussing and collaborating with different teams and departments in Monash to meet business requirements",
+      "Designed a relational database with over 15 tables and migrated data from a previously unstructured and data-redundant manual record-keeping system on Google Drive to Airtable",
+      "Developed dashboards and interfaces on Airtable to monitor companies with agreements with Monash University, while implementing custom JavaScript scripts to automate data manipulation and workflow tasks",
+      "Pioneered and spearheaded the development of the first-ever Companies on Campus client portal using React.ts, Express.js, Docker, NGINX, AWS EC2, and Red Hat Enterprise Linux",
+      "Served as the point of contact between different teams and departments in Monash to meet business requirements",
     ],
   },
   {
@@ -50,7 +50,7 @@ export const experience = [
     company: "Curlec",
     date: "Dec '20 - Feb '21",
     detail: [
-      "Spearheaded a demo bank system which demonstrates a new real-time direct debit transaction using the MERN stack and AWS EC2",
+      "Spearheaded a demo bank system which displayed real-time direct debit transaction using the MERN stack and AWS EC2 which was used to present to all major banks in Malaysia to demonstrate upcoming real time payment capability",
       "Developed a new subscription-based system to offer their services/products as subscriptions using React, DjangoRestFramework and PostgreSQL",
     ],
   },
