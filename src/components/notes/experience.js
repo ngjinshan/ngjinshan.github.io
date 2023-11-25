@@ -1,8 +1,18 @@
 export const experience = [
   {
+    title: "Customer Solutions Manager Intern",
+    company: "Amazon Web Services",
+    date: "Nov '23 - Feb '24",
+    detail: [
+      "Executing small-scale database migrations and modernizations from on-premise and other cloud providers to AWS",
+      "Documenting a complete runbook on common database migration and modernization pathways using AWS MigOps to empower the APJ CSM community with the knowledge and tools needed for precise guidance on database migrations to AWS",
+      "Documenting the implementation of AWS Cloud Intelligent Dashboards, encompassing CUDOS, Cost Intelligence Dashboard, and The KPI and Modernization Dashboard to provide the CSM community with the knowledge to provide cost-effective solutions to their customers",
+    ],
+  },
+  {
     title: "Software Developer",
     company: "Monash University",
-    date: "Oct '22 - Present",
+    date: "Oct '22 - Nov '23",
     detail: [
       "Designing relational database with more than 15 tables and implementing on Airtable to migrate from manual record keeping process on Google Drive",
       "Developing dashboards and interfaces on Airtable to monitor companies with agreements with Monash, while implementing custom JavaScript scripts for automating data manipulation and workflow tasks",
