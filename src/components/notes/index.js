@@ -68,7 +68,7 @@ const Notes = () => {
       >
         <div
           className="col-lg-4"
-          style={{ marginTop: "auto", height: "60vh", overflowY: "auto" }}
+          style={{ minHeight: "60vh", overflowY: "auto" }}
         >
           <div style={{ height: "100%" }}>
             <LeftTopPanel />
