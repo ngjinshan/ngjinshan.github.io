@@ -110,6 +110,10 @@ const Notes = () => {
           year={2021}
           data={experience.filter((ex) => ex.year == 21)}
         />
+        <MobileExperience
+          year={2020}
+          data={experience.filter((ex) => ex.year == 20)}
+        />
       </div>
     </>
   );
