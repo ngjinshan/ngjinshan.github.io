@@ -123,7 +123,7 @@ const Calendar = () => {
           >
             <div
               style={{
-                color: "#7c7c7c",
+                // color: "#7c7c7c",
                 display: "flex",
                 justifyContent: "space-between",
               }}
