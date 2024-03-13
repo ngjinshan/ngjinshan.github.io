@@ -40,9 +40,7 @@ const AboutModal = (props) => {
                   </div>
                   <br />
                   <div className="text-center">
-                    <p>
-                      Intern at AWS & MEng (Engineering Management) at Monash
-                    </p>
+                    <p>MEng (Engineering Management) at Monash</p>
                   </div>
                 </div>
                 <div className="col-lg-8">

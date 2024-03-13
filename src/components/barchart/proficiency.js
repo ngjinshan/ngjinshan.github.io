@@ -12,23 +12,19 @@ export const proficiency = [
     value: 90,
   },
   {
-    name: "CSS",
-    value: 90,
-  },
-  {
-    name: "HTML5",
-    value: 90,
-  },
-  {
-    name: "MongoDB",
-    value: 80,
-  },
-  {
-    name: "SQL",
+    name: "Node.js",
     value: 70,
   },
   {
-    name: "Express",
+    name: "Python",
+    value: 70,
+  },
+  {
+    name: "MongoDB",
+    value: 70,
+  },
+  {
+    name: "SQL",
     value: 70,
   },
   {
@@ -36,11 +32,15 @@ export const proficiency = [
     value: 70,
   },
   {
-    name: "Python",
+    name: "AWS",
     value: 60,
   },
   {
-    name: "Django",
+    name: "Linux",
+    value: 60,
+  },
+  {
+    name: "Oracle",
     value: 60,
   },
   {
@@ -50,17 +50,5 @@ export const proficiency = [
   {
     name: "NGINX",
     value: 60,
-  },
-  {
-    name: "AWS",
-    value: 50,
-  },
-  {
-    name: "Java",
-    value: 50,
-  },
-  {
-    name: "PHP",
-    value: 50,
   },
 ];
